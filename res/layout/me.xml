@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#197DBF" >
+
+        <ImageView
+            android:id="@+id/id_iv_me_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/id_iv_me_setting"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/setting" />
+
+        <ImageView
+            android:id="@+id/id_iv_head"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/id_iv_me_back"
+            android:layout_toRightOf="@+id/id_iv_me_back"
+            android:src="@drawable/head" />
+
+        <Button
+            android:id="@+id/id_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_iv_head"
+            android:background="#00000000"
+            android:text="登录/注册"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ll_me_order"
+         android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="我的订单"
+            android:textColor="#515151"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/id_ll_me_package"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:src="@drawable/pack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="医院资讯"
+            android:textColor="#515151"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

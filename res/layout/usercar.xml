@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#197DBF" >
+
+        <ImageView
+            android:id="@+id/id_iv_usercar_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="打车"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/path" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_tv_usercar_start"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/point_start"
+                android:gravity="center_vertical"
+                android:text="输入起点"
+                android:textColor="#707070"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="7dp"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:id="@+id/id_tv_usercar_end"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/point_end"
+                android:gravity="center_vertical"
+                android:text="输入终点"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/id_map_usercar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.baidu.mapapi.map.TextureMapView>
+
+    <Button
+        android:id="@+id/id_btn_usercar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="#197DBF"
+        android:text="呼叫便车"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

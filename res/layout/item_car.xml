@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/history" />
+
+        <TextView
+            android:id="@+id/id_tv_item_car_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="我的位置"
+            android:textColor="#dddddddd"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/go" />
+
+        <TextView
+            android:id="@+id/id_tv_item_car_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lines="1"
+            android:text="深圳软件园"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddddd" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/id_nav_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.baidu.mapapi.map.TextureMapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+      android:background="@android:color/transparent" 
+        android:padding="8dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_btn_start"
+            android:background="#197DBF"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="开始导航"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>
